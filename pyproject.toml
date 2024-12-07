@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dab-serv"
+version = "0.1.0"
+description = ""
+authors = ["Vitaliy <ss.vitaliy88@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.11.9"
+aiohttp-jinja2 = "^1.6"
+aiopg = "^1.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
