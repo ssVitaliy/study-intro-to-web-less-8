@@ -12,6 +12,10 @@ aiohttp-jinja2 = "^1.6"
 aiopg = "^1.4.0"
 
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+psycopg2-binary = "^2.9.10"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
