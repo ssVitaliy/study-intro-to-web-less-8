@@ -9,14 +9,14 @@ data = []
 db_conn = pg.connect('dbname=my_db user=user password=passwd host=127.0.0.1 port=5432')
 
 cur = db_conn.cursor()
-cur.execute('SELECT id, name, age, address FROM vb.people')
+cur.execute('SELECT id, name, age, address FROM people')
 for row in cur:
     data.append(row)
 db_conn.close()
 
 print(data)
 
-env = Environment(loader=FileSystemLoader('gb_lessons/templates'))
+env = Environment(loader=FileSystemLoader('dab_serv/templates'))
 template = env.get_template('experience.htm')
 
 html = template.render(theads=table_heads_rus, people_list=data)
